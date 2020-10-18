@@ -1,0 +1,68 @@
+.chat-header {
+	font-size: 2rem;
+	background-color: #2f3135;
+	display: flex;
+	padding: 1.5rem;
+	z-index: 1;
+	flex: 0.08;
+	box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.8);
+	border-bottom: 3px solid #292c30;
+}
+.chat-header__left {
+	display: flex;
+	font-size: 3rem;
+	align-items: center;
+	font-weight: 500;
+	color: #bbb;
+	flex: 0.6;
+}
+.chat-header__left span {
+	font-weight: 600;
+	margin-right: 0.3rem;
+	color: #888;
+	font-size: 3.5rem;
+}
+.chat-header__right {
+	display: flex;
+	flex: 0.4;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.chat-header__right svg {
+	font-size: 2rem;
+	color: #aaa;
+}
+.chat-search {
+	display: flex;
+	align-items: center;
+}
+@media only screen and (max-width: 50em) {
+	.chat-search {
+		display: none;
+	}
+	.chat-header__left {
+		font-size: 2.2rem;
+	}
+	.chat-header__left span {
+		font-size: 2.5rem;
+	}
+}
+.chat-search__input {
+	padding: 0.5rem 0;
+	padding-left: 3.5rem;
+	outline: none;
+	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.712);
+	color: #bbb;
+	border: none;
+	border-radius: 4px;
+	background-color: rgba(20, 20, 20, 0.712);
+}
+.chat-search svg {
+	margin-right: -3rem;
+	margin-left: 1rem;
+	z-index: 2;
+}
+.MuiSvgIcon-root.toggler {
+	font-size: 2.75rem !important;
+}

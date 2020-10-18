@@ -1,0 +1,31 @@
+body {
+	font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	box-sizing: inherit;
+	font-size: 62.5%;
+	font-family: "Open Sans", sans-serif;
+}
+@media only screen and (max-width: 50em) {
+	html {
+		font-size: 50%;
+	}
+}
+@media only screen and (max-width: 37.5em) {
+	html {
+		font-size: 45%;
+	}
+}

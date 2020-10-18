@@ -1,0 +1,22 @@
+.login {
+	display: flex;
+	flex-direction: column;
+	background-color: #3e4046;
+	padding: 5rem;
+	width: 100%;
+	align-items: center;
+	height: 100vh;
+}
+
+.login__logo {
+	width: 50vw;
+	object-fit: contain;
+	margin: 5rem 0;
+	height: auto;
+	filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.5));
+}
+.login Button {
+	font-size: 1.6rem;
+	align-self: center;
+	font-weight: 400;
+}

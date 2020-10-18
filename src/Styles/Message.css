@@ -1,0 +1,38 @@
+.message {
+	display: flex;
+	color: white;
+	padding: 1rem 2rem;
+	font-size: 1.6rem;
+}
+.message svg {
+	font-size: 4rem;
+	margin: 0 1.5rem;
+}
+.message__content {
+	display: flex;
+	flex-direction: column;
+	margin: 0 2rem;
+}
+.message__user {
+	display: flex;
+	align-items: center;
+	padding-bottom: 0.5 rem;
+}
+.message__name {
+	font-size: 1.7rem;
+	font-weight: 500;
+	margin-right: 2rem;
+}
+.message__time {
+	color: #898989;
+	font-size: 1.3rem;
+}
+.message__text {
+	color: #ccc;
+}
+@media only screen and (max-width: 37.5em) {
+	.message__content,
+	.message__name {
+		font-size: 1.9rem;
+	}
+}

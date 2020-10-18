@@ -1,0 +1,122 @@
+.sidebar {
+	/* width: 25%; */
+	background-color: #2f3135;
+	display: flex;
+	flex: 0.25;
+	z-index: 2;
+	height: 100vh;
+	color: #eee;
+	flex-direction: column;
+	box-shadow: 0 0.7rem 1rem rgba(20, 20, 20, 0.912);
+	transition: all 0.3s ease-in;
+}
+@media only screen and (max-width: 50em) {
+	.sidebar {
+		flex: 0.33333;
+	}
+}
+@media only screen and (max-width: 37.5em) {
+	.sidebar {
+		position: fixed;
+		transform: translateX(-100%);
+		transition: all 0.3s ease-in;
+	}
+}
+.sidebar__top svg {
+	margin: 0 2rem;
+	font-size: 3rem;
+}
+.sidebar__top {
+	padding: 2rem;
+	font-size: 2.5rem;
+	border-bottom: 3px solid #26272b;
+	font-weight: 400;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.sidebar__channels {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+}
+.sidebar__channels-header {
+	font-size: 2rem;
+	color: rgba(154, 155, 158, 0.8);
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+}
+.sidebar__channels-header span {
+	display: flex;
+	align-items: center;
+}
+.sidebar__channels-header svg,
+button {
+	color: rgba(154, 155, 158, 0.8);
+	font-size: 2.5rem;
+}
+
+.sidebar__channels-header .MuiIconButton-root :hover svg {
+	color: rgb(191, 192, 197);
+}
+.sidebar__channels-list {
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+.sidebar__channels-list::-webkit-scrollbar {
+	display: none;
+}
+.sidebar__voice {
+	justify-self: flex-end;
+	align-self: stretch;
+	font-size: 2rem;
+	display: flex;
+	color: rgba(25, 160, 81, 0.856);
+	align-items: center;
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
+	font-weight: 500;
+	padding: 2rem;
+}
+.sidebar__voice svg {
+	font-size: 3rem;
+	color: rgba(25, 160, 81, 0.856);
+}
+.sidebar__voice span {
+	justify-self: flex-end;
+	margin-left: auto;
+}
+.sidebar__voice span svg {
+	color: rgb(191, 192, 197);
+	font-size: 2rem;
+	margin-left: 1rem;
+}
+.sidebar__profile {
+	display: flex;
+	justify-content: space-around;
+	padding: 2rem 1rem;
+	flex-shrink: 1;
+	align-self: stretch;
+	align-items: center;
+}
+.sidebar__profile svg {
+	font-size: 2.5rem;
+}
+.sidebar__profile--name {
+	font-size: 1.4rem;
+	flex: 1;
+	margin-left: 1rem;
+}
+
+.sidebar__profile--icons svg {
+	font-size: 2.5rem;
+	margin: 0 0.5rem;
+}
+.MuiSvgIcon-root.toggler {
+	font-size: 2.75rem !important;
+	color: whitesmoke;
+}

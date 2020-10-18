@@ -1,0 +1,26 @@
+.sidebar-channel {
+	display: flex;
+	color: rgba(153, 146, 146, 0.897);
+	align-items: center;
+	padding: 0 1.5rem;
+	transition: all 0.15s;
+	cursor: pointer;
+}
+.sidebar-channel:hover {
+	background-color: rgba(119, 116, 116, 0.89);
+	color: whitesmoke;
+}
+.sidebar-channel span {
+	font-size: 3.5rem;
+	font-weight: 700;
+}
+.channel__name {
+	font-size: 1.8rem;
+	margin-left: 1rem;
+}
+@media only screen and (max-width: 37.5em) {
+	.channel__name {
+		font-size: 2.2rem;
+		margin-left: 1rem;
+	}
+}

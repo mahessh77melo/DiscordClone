@@ -1,0 +1,14 @@
+h1.app-header {
+	font-size: 3rem;
+}
+.app {
+	display: flex;
+	flex-direction: row;
+	font-family: "Roboto", sans-serif;
+	scrollbar-width: none;
+	overflow-y: hidden;
+	height: 100vh;
+}
+.app::-webkit-scrollbar {
+	display: none;
+}
