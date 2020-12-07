@@ -32,13 +32,19 @@
 	border-bottom: 3px solid #26272b;
 	font-weight: 400;
 	display: flex;
+	flex: 0.1;
 	justify-content: space-around;
 	align-items: center;
 }
 .sidebar__channels {
 	display: flex;
-	flex: 1 1 auto;
+	flex: 0.8;
 	flex-direction: column;
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+.sidebar__channels::-webkit-scrollbar {
+	display: none;
 }
 .sidebar__channels-header {
 	font-size: 2rem;
@@ -47,6 +53,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 2rem;
+	box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 .sidebar__channels-header span {
 	display: flex;
@@ -64,6 +71,7 @@ button {
 .sidebar__channels-list {
 	display: flex;
 	flex-direction: column;
+	padding: 2rem 0;
 	overflow-y: scroll;
 	scrollbar-width: none;
 }
@@ -97,6 +105,7 @@ button {
 }
 .sidebar__profile {
 	display: flex;
+	flex: 0.1;
 	justify-content: space-around;
 	padding: 2rem 1rem;
 	flex-shrink: 1;
